@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="w-container">
+      <nav>
+          <div>
+              <img src="./images/weather-removebg-preview.png" alt=""  class="logo">
+              <h4>Home</h4>
+              <h4>About</h4>
+           </div>
+           <div>
+              <input type="text" placeholder="search area or place...." id="input">
+              <button  onclick="weather()" >Search</button>
+           </div>
+           <div>
+            <i class="bi bi-person-circle"></i>
+            <i class="bi bi-list"></i>
+           </div>
+        </nav>
+        <!-- ....................navbar is completed............. -->
+         <div class="hero-container">
+            <div>
+                <h1 class="good-mrng">Good Morning</h1>
+                <p class="text">Brand New Weather App with up to Date</p>
+                <button class="below-btn">Max Temp:<span id="h-max-t"></span></button>
+                <button class="below-btn2">Min Temp:<span id="h-min-t"></span></button>
+            </div>
+            <div class="mid-img-con">
+                <h1 class="place"id="h-place">Place</h1>
+                <div class="i">
+                    <img src="./images/download-removebg-preview.png" alt="">
+                </div>
+            </div>
+            <div>
+                <h1 class="degrees"><span id="h-temp">27°</span></h1>
+                <div class="b-data">
+                    <h3>9th AUG Friday 2024</h3>
+                    <h3 id="status">Cloudy</h3>
+                </div>
+                <div class="values">
+                    <div class="v-1">
+                        <h1>Longitude</h1>
+                        <h1 id="h-lon">20.4</h1>
+                    </div>
+                    <div class="v-1">
+                        <h1>Latitude</h1>
+                        <h1 id="h-lat">20.4</h1>
+                    </div>
+                    <div class="v-1">
+                        <h1>Pressure</h1>
+                        <h1 id="h-pressure">20.4</h1>
+                    </div>
+                    <div class="v-1">
+                        <h1>Humidity</h1>
+                        <h1 id="h-humidity">20.4</h1>
+                    </div>
+                </div>
+            </div>
+         </div>   
+     </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
